@@ -1,6 +1,12 @@
-import 'package:instagram/app/app.dart';
+import 'package:api_repository/api_repository.dart';
+import 'package:instagram/app/view/app.dart';
 import 'package:instagram/bootstrap.dart';
 
 void main() {
-  bootstrap(() => const App());
+  const apiRepository = ApiRepository();
+  bootstrap(
+    () => const App(
+      apiRepository: apiRepository,
+    ),
+  );
 }
