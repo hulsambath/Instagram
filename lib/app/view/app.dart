@@ -1,22 +1,17 @@
+import 'package:api_repository/api_repository.dart';
 import 'package:flutter/material.dart';
-import 'package:instagram/counter/counter.dart';
-import 'package:instagram/l10n/arb/app_localizations.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:instagram/app/app.dart';
 
 class App extends StatelessWidget {
-  const App({super.key});
+  const App({required this.apiRepository, super.key});
 
+  final ApiRepository apiRepository;
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        appBarTheme: AppBarTheme(
-          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        ),
-        useMaterial3: true,
-      ),
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
-      supportedLocales: AppLocalizations.supportedLocales,
-      home: const CounterPage(),
+    return RepositoryProvider.value(
+      value: apiRepository,
+      child: const AppView(),
     );
   }
 }
