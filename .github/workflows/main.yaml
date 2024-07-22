@@ -1,16 +1,10 @@
-name: instagram
+name: Instagram
 
 concurrency:
   group: $-$
   cancel-in-progress: true
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+on: [pull_request]
 
 jobs:
   semantic-pull-request:
