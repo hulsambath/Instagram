@@ -4,9 +4,11 @@ import 'package:instagram/bootstrap.dart';
 
 void main() {
   const apiRepository = ApiRepository();
+    
   bootstrap(
-    () => const App(
-      apiRepository: apiRepository,
-    ),
+    (powerSyncRepository) {
+      return const App(apiRepository: apiRepository);
+    },
+    env: EnvDev,
   );
 }
