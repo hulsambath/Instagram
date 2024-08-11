@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "174842870019",
+    "project_id": "instagram-prod-d9fab",
+    "storage_bucket": "instagram-prod-d9fab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174842870019:android:60db7cfb56cb1234bb1136",
+        "android_client_info": {
+          "package_name": "com.sambath.instagram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "174842870019-trsv0r6vmpkbp2nkkpkm1af1qj6qcbvn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTeFWsqxhdXIPHoIa2xdGksWIVaxKs1TQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "174842870019-trsv0r6vmpkbp2nkkpkm1af1qj6qcbvn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "174842870019-jq7409datkjrp2hqjgo0oq4ce53rf9um.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sambath.instagram"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

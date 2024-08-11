@@ -60,4 +60,3 @@ void logD(
       error: error,
       stackTrace: stackTrace,
     );
-    
